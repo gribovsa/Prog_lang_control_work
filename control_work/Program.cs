@@ -23,17 +23,37 @@
 
 // }
 
-void PrintArray(string[] arr)
+void PrintArray(string[] arr) //метод печати архивак
 {
     for (int i = 0; i < arr.Length; i++)
     {
         Console.Write($"{arr[i]} ");
+        
     }
+    Console.WriteLine();
 }
 
 
+int LenNewArr(string[] arr) //метод определяет длинну нового массива, равную колву слов с длинной  меньше равно 3 символам
+{
+    int len = 0;
+for (int i = 0; i < arr.Length; i++)
+{
+    string word = arr[i];
+    if (word.Length <= 3)
+        {
+        //Console.Write($"{word} ");
+        len++;
+        }
+}
+return (len);
+}
+
 string[] inputArray = new string[] { "Hello", "2", "world", ":-)" };
 PrintArray(inputArray);
+//LenNewArr(inputArray);
+Console.Write($"Длинна нового массива будет: {LenNewArr(inputArray)}");
+
 
 
 
