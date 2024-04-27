@@ -8,8 +8,8 @@
 // [“Russia”, “Denmark”, “Kazan”] → []
 
 
-int LenNewArray(string[] arr)
-{    //метод считает длинну нового массива из элементов менее 3 символов
+int LenNewArray(string[] arr) //метод определения длинны нового массива из элементов менее 3 символов
+{    
     int lenNewArr = 0;
     for (int i = 0; i < arr.Length; i++)
     {
@@ -40,7 +40,7 @@ string[] NewArray(string[] arr, int lenNewArr) //метод созаёт нов�
 return newArray;
 }
 
-void ShowArray(string[] arrayToShow)
+void ShowArray(string[] arrayToShow) //метод вывода массива в консоль
 {
     for (int i = 0; i < arrayToShow.Length; i++)
     {
